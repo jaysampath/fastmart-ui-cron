@@ -5,7 +5,7 @@ function App() {
   const min = 1;
   const cronIntervalInMillis = min * 60 * 1000;
   const hitBackendAPi = async () => {
-    console.log("Hitting backend api periodically.");
+    //console.log("Hitting backend api periodically.");
     const response = await fetch(
       "https://fastmart-backend.onrender.com/user/check/invalidmail@email.com"
     );
