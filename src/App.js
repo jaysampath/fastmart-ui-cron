@@ -2,7 +2,7 @@ import "./App.css";
 import { useEffect } from "react";
 
 function App() {
-  const min = 1;
+  const min = 15;
   const cronIntervalInMillis = min * 60 * 1000;
   const hitBackendAPi = async () => {
     //console.log("Hitting backend api periodically.");
