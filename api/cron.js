@@ -11,7 +11,7 @@ const hitBackendAPi = async () => {
   console.log(
     "Hitting backend api periodically using Vercel cron jobs feature"
   );
-  console.log("Current hit time " + new Date().getTime().toLocaleString());
+  console.log("Current hit time " + new Date().toLocaleString());
   fetch(
     "https://fastmart-backend.onrender.com/user/check/invalidmail@email.com"
   )
