@@ -1,7 +1,6 @@
 
 export default function handler(req, res) {
-    hitBackendAPi();
-    res.status(200).end('Hello Cron!');
+    res.status(200).end(JSON.stringify(hitBackendAPi()));
   }
 
 const hitBackendAPi = async () => {
@@ -11,4 +10,5 @@ const hitBackendAPi = async () => {
       "https://fastmart-backend.onrender.com/user/check/invalidmail@email.com"
     );
     const data = await response.json();
+    return data;
 };
